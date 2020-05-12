@@ -38,6 +38,7 @@ SELECT
 	, COUNT(DISTINCT CASE WHEN event_name = 'post' THEN user_id END) post_complete
 FROM post_events
 WHERE created_at > DATEADD('d', -7, current_date)
+GROUP BY 1
 ~~~
 
 
