@@ -30,7 +30,18 @@ Write a query to find the overall acceptance rate of friend requests.
 
 **Write a query to find the overall acceptance rate of friend requests.**
 
-## Solution
+## Solutions
+
+```sql
+SELECT 
+	IFNULL(ROUND(
+    COUNT(DISTINCT l1.acceptor_id, l1.requester_id)/
+    COUNT(DISTINCT l2.requester_id, l2.requested_id),
+   2),0) accept_rate
+FROM friend_accepts l1, friend_requests l2
+```
+
+
 
 ~~~sql
 WITH base AS (
