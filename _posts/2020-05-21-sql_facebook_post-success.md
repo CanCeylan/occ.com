@@ -36,6 +36,7 @@ SELECT
 	created_at::date day
 	, COUNT(DISTINCT CASE WHEN event_name = 'enter' THEN user_id END) post_start
 	, COUNT(DISTINCT CASE WHEN event_name = 'post' THEN user_id END) post_complete
+	, post_complete/post_start sr_daily
 FROM post_events
 WHERE created_at > DATEADD('d', -7, current_date)
 GROUP BY 1
