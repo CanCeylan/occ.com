@@ -2,7 +2,7 @@
 layout: post
 title:  "Post Events | Facebook Data Science Interview SQL Question"
 date:   2020-05-12 20:44:36 +0100
-categories: jekyll update
+categories: facebook data science interview
 ---
 ## Post Success
 
