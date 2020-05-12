@@ -4,7 +4,7 @@ title:  "Post Events | Facebook Data Science Interview SQL Question"
 date:   2020-05-12 20:44:36 +0100
 categories: jekyll update
 ---
-## Post Events
+## Post Success
 
 In the table below (`post_events` table), column *`event_name`* represents either ('enter', 'post', 'cancel') for when a user starts a post (enter), ends up canceling it (cancel), or ends up posting it (post).
 
@@ -25,7 +25,7 @@ Sample data:
 | 456     | 2019-01-02 | enter      |
 | 456     | 2019-01-02 | cancel     |
 
-## Solution
+## Solution
 
 Let's first define the post success rate on a day (`SR_daily`).
 
