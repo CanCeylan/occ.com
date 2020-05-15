@@ -84,7 +84,7 @@ WITH base AS (
   SELECT 
     *
     , ROW_NUMBER() OVER(PARTITION BY query ORDER BY rating DESC) desc_rating
-    , position - desc_rating residual
+    , ABS(position - desc_rating) residual
     , COUNT(DISTINCT result_id) n
   FROM search_results
   GROUP BY 1,2,3,4
