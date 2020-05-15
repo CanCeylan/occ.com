@@ -71,7 +71,7 @@ Then I would define the _precision_ metric either *Mean Absolute Error* (MAE) or
 * Can range from 0 to ∞
 * Negatively orianted scores. *(Lower is better)*
 
-#### Differences of Mean Absolute Error and Root Mean Squared Error
+#### Differences of Mean Absolute Error and Root Mean Squared Error
 
 * RMSE gives relatively high weight to large errors. *(Since the errors are squared before they are averaged)*
 
