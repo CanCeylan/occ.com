@@ -29,7 +29,7 @@ Each row in the `search_events` table represents a single search with the `has_c
 | query       | varchar |
 | has_clicked | boolean |
 
-## Question: Write a query to return data to support or disprove this hypothesis.
+### Question: Write a query to return data to support or disprove this hypothesis.
 
 We can define multiple metrics to understand relationship between search results and CTR.
 
@@ -41,6 +41,8 @@ Here are a few of the metrics I defined:
 * **Is most relevant top**. *(It shows whether there is any result with the highest relevance **and** whether it's at the top.)*
 
 Once we have these metrics, we can then join them to `search_events` table to see the relationship between one of these metrics with CTR. In the example below I choose `avg_rating`. But it's worth exploring the other metrics too before jumpin into any conclusions.
+
+### Solution
 
 ```sql
 WITH base AS (
