@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Student Attendance | Facebook Data Science Interview SQL Question"
-date:   2020-05-15 20:44:36 +0100
+date:   2020-05-17 10:44:36 +0100
 categories: facebook data science interview
 ---
 
@@ -25,7 +25,7 @@ categories: facebook data science interview
 | date_of_birth | date    |
 | hometown      | string  |
 
-**Question 1: What percent of students attend school on their birthday?**
+## Question 1: What percent of students attend school on their birthday?
 
 * If there is a row for every day for every student with attendance data, we can join on `attendance_event` table since we can cover all the days *(See solution 1.1)*. But if, in `attendance_events` table, there are only rows when a student attend to a school, we should only join on `student_id` and do the aggregation on `SELECT` statement *(See solution 1.2)*.
 
@@ -57,7 +57,7 @@ LEFT JOIN all_students l2 ON l2.student_id = l1.student_id
 
 
 
-**Question 2: Which grade level had the largest drop in attendance between yesterday and today?**
+## Question 2: Which grade level had the largest drop in attendance between yesterday and today?
 
 * If we are asked to do without using window function. We can define the base table and join with itself to get yesterday's data. (See solution 2.1)
 
