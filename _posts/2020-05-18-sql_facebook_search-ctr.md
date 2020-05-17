@@ -42,7 +42,7 @@ Here are a few of the metrics I defined:
 
 Once we have these metrics, we can then join them to `search_events` table to see the relationship between one of these metrics with CTR. In the example below I choose `avg_rating`. But it's worth exploring the other metrics too before jumpin into any conclusions.
 
-### Solution
+### Solution
 
 ```sql
 WITH base AS (
