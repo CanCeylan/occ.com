@@ -32,6 +32,8 @@ and many more.
 1. Convert newly created column into dummies
 1. Merge it with the original DataFrame
 
+
+
 ## 1. Convert `string` object to `list` object in Pandas DataFrame
 
 Let's read the data and look at the `genres` field on the first row:
@@ -68,7 +70,10 @@ df[['genres']].dtypes
     genres    object
     dtype: object
 
-## 2. Only select necessary info within the list object and create a clean column
+
+
+## 2. Only select necessary info within the list object and create a clean column
+
 _How to convert string object into a list in python?_
 
 Thankfully, there is a class called `ast` (Abstract Syntax Trees) in python which helps Python applications to process trees of the Python abstract syntax grammar. 
@@ -174,7 +179,7 @@ df.head()[['genres','genre_names']]
 </table>
 
 
-## 3. Convert newly created column into dummies
+## 3. Convert newly created column into dummies
 
 Now we have much clean genre data, but they are still not easily accessible for further data exploration.
 
@@ -545,7 +550,7 @@ genre_dummies[['Animation','Comedy','Family','Crime','Documentary']].head()
 </table>
 
 
-## 4. Merge it with the original DataFrame
+## 4. Merge it with the original DataFrame
 
 That's the simplest step after using `ast.literal_eval`, `stack`, and `get_dummies` functions.
 
