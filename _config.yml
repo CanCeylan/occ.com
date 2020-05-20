@@ -23,8 +23,8 @@ email: orhancanceylan {at} gmail [dot] com
 description: >- # this means to ignore newlines until "baseurl:"
   Data Scientist at Deliveroo, with strong commercial acumen and Computer Science background. 
   Specialising in causal inference strategies and analysis of complex scenarios as well as experimentation to solve business and product problems.
-baseurl: "/occ.com" # the subpath of your site, e.g. /blog
-url: "https://canceylan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "/occ.com" # the subpath of your site, e.g. /blog
+url: "http://orhancanceylan.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ocanceylan
 github_username:  canceylan
 
