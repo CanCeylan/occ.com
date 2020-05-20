@@ -32,9 +32,7 @@ and many more.
 1. Convert newly created column into dummies
 1. Merge it with the original DataFrame
 
-
-
-## 1. Convert `string` object to `list` object in Pandas DataFrame
+## 1. Convert `string` object to `list` object in Pandas DataFrame
 
 Let's read the data and look at the `genres` field on the first row:
 
