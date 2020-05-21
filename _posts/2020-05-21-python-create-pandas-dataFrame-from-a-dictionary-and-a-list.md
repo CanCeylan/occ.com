@@ -9,9 +9,9 @@ categories: python pandas
 import pandas as pd
 ```
 
-# Create a Pandas DataFrame from Lists
+## Create a Pandas DataFrame from Lists
 
-## Row Oriented List
+### Row Oriented List
 
 
 ```python
@@ -68,7 +68,7 @@ pd.DataFrame(row_list, columns=column_names) #pd.DataFrame.from_records(row_list
 </table>
 
 
-## Column Oriented List
+### Column Oriented List
 
 
 ```python
@@ -139,9 +139,9 @@ pd.DataFrame(dict(column_list))
 </table>
 
 
-# Create a Pandas DataFrame from Dictionaries
+## Create a Pandas DataFrame from Dictionaries
 
-## Column Oriented Dictionary
+### Column Oriented Dictionary
 
 
 ```python
@@ -201,7 +201,7 @@ pd.DataFrame(column_dict)
 </table>
 
 
-## Row Oriented Dictionary
+### Row Oriented Dictionary
 
 
 ```python
