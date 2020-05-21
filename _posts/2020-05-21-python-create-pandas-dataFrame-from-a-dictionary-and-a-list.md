@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Create Pandas DataFrame from a Dictionary and a List"
-date:   2020-05-21 12:44:36 +0100
+date:   2020-05-21 10:44:36 +0100
 categories: python pandas
 ---
 
@@ -68,7 +68,7 @@ pd.DataFrame(row_list, columns=column_names) #pd.DataFrame.from_records(row_list
 </table>
 
 
-### Column Oriented List
+### Column Oriented List
 
 
 ```python
@@ -141,7 +141,7 @@ pd.DataFrame(dict(column_list))
 
 ## Create a Pandas DataFrame from Dictionaries
 
-### Column Oriented Dictionary
+### Column Oriented Dictionary
 
 
 ```python
@@ -201,7 +201,7 @@ pd.DataFrame(column_dict)
 </table>
 
 
-### Row Oriented Dictionary
+### Row Oriented Dictionary
 
 
 ```python
